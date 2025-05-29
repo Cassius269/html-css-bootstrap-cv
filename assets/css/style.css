@@ -1,0 +1,44 @@
+/**** STYLISATION DE BASE ****/
+:root {
+    --color-cv: rgb(79 70 229 / 1)
+}
+
+.color-cv {
+    color: var(--color-cv) !important;
+}
+
+.bg-cv {
+    background-color: var(--color-cv) !important;
+}
+
+body {
+    /** Stylisation du cv avec la font Playwrite Magyarország de Google **/
+    font-family: "Playwrite HU", cursive !important;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style: normal;
+}
+
+
+/** STYLISATION du header **/
+#divListLinks {
+    justify-content: space-evenly;
+}
+
+/* Bouton Me contacter */
+    header .btn-primary {
+    width: 95vw !important; /*  Surcharger la largeur du bouton en mobile first pour occuper toute la largeur de l'écran jusqu'aux écrans d'ordinateurs*/
+    border-radius: 14px !important;
+    }
+
+@media screen and (width > 992px) {
+    header .btn-primary {
+    width: auto !important;
+    border-radius: 18px !important;
+    }
+}
+
+
+.navbar-brand {
+    margin-left: 1rem;
+}
