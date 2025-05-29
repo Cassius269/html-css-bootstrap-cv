@@ -1,0 +1,31 @@
+/** STYLISATION du header **/
+@use '../utils/variables' as variables;
+
+header {
+    nav {
+        .navbar-brand {
+            margin-left: 1rem;
+        }
+
+        #divListLinks {
+            justify-content: space-evenly;
+
+            .nav-link:hover {
+                background-color: variables.$primary;
+                color:white;
+            }
+        }
+    }
+
+     /* Bouton Me contacter */
+    .btn-primary  {
+        width: 95vw !important; /*  Surcharger la largeur du bouton en mobile first pour occuper toute la largeur de l'écran jusqu'aux écrans d'ordinateurs*/
+        border-radius: 14px !important;
+        @media screen and (width > 992px) {
+            width: auto !important;
+            border-radius: 18px !important;
+        }
+    }
+    
+}
+

@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV de MOHAMED ALI Fahami">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
     <!-- Intégration de Bootstrap au projet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="js/main.js" type="module" defer></script>
     <!-- Intégration font Google --> 
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +19,7 @@
     <nav class="navbar navbar-expand-lg top-fixed" style="top:-10px">
       <div class="container-fluid py-3">
         <!-- Le logo de la marque ou le nom à citer en haut de la page à gauche-->
-        <a class="navbar-brand color-cv fw-bold fs-6" href="#">MOHAMED ALI Fahami</a>
+        <a class="navbar-brand text-primary fw-bold" href="#">MOHAMED ALI Fahami</a>
         <!-- Le bouton de toggle pour le mobile-first -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divListLinks">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +43,7 @@
                     <a class="nav-link" href="#">Réferences</a>
                 </li>
             </ul>
-            <button type="button" class="btn btn-primary bg-cv"> 
+            <button type="button" class="btn btn-primary bg-primary"> 
                 <a class="nav-link" href="#">Me contacter</a>
             </button>
       </div>
@@ -53,16 +51,17 @@
     </nav>
   </header>
     <main class="container-fluid">
-        <section class="presentation">
+        <section class="presentation p-3 bg-secondary">
             <article>
-                <h2>Développeur <span class="color-cv">PHP/Symfony</span></h2>
+                <h2>Développeur <span class="text-primary">PHP/Symfony</span></h2>
                 <p>Passionné par la création d'applications web robustes et scalables</p>
-                <a href="#">
-                    <button type="button" class="btn btn-primary rounded-5"> Me recruter</button>
-                </a>
-                <a href="#"> 
-                    <button type="button" class="btn btn-outline-primary rounded-5">Voir les projets</button>
-                </a>
+                <div class="row">
+                     <div class="d-flex flex-column gap-3 d-lg-block col-lg-12">
+                        <a href="#" role="button" class="btn btn-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold"> Me recruter</a>
+                        <a href="#" role="button" class="btn btn-outline-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold mx-lg-5">Voir les projets</a>
+                    </div>
+                <img class="d-block m-auto mt-5 img-fluid col-lg-4 rounded-5" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/14755d0ad4-c95fa96790679bc4056f.png" alt="image représentant un developpeur entrain de coder">
+                </div>  
             </article>
         </section>
     </main>

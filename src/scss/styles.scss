@@ -1,0 +1,12 @@
+/**** IMPORTATION DE BOOTSTRAP *****/
+@use "bootstrap/scss/bootstrap";
+
+// Bases
+@use './base/base.scss' as base;
+
+// Importation de la stylisation de la page d'accueil du CV monopage
+@use "./pages/homepage" as homepage;
+
+
+// Importation des composants
+@use "./components/buttons.scss";

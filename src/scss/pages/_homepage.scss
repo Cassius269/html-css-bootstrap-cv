@@ -1,0 +1,30 @@
+@use '../layouts/header' as header;
+@use '../utils/variables' as variables;
+
+/** Stylisation de la section Présentation **/
+.presentation {
+    @media screen and (width > 992px) {
+
+        /* Cibler les liens boutons sous forme de lien direct */
+        a[role="button"] {
+            border-radius: 50px !important;
+        }
+    }
+
+    height: 500px;
+
+    img {
+    @media screen and (width > 992px) {
+        margin-top: auto !important;
+        max-width: auto !important;
+        position: relative;
+        left: 17rem;
+        bottom: 10.2rem;
+        // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    @media screen and (width > 1024px) {
+        left: 13rem;
+    }
+
+    }
+}
