@@ -3,7 +3,9 @@
 
 /** Stylisation de la section Présentation **/
 .presentation {
+    max-height: 730px !important;
     @media screen and (width > 992px) {
+        height: 500px;
 
         /* Cibler les liens boutons sous forme de lien direct */
         a[role="button"] {
@@ -11,20 +13,65 @@
         }
     }
 
-    height: 500px;
-
     img {
-    @media screen and (width > 992px) {
-        margin-top: auto !important;
-        max-width: auto !important;
-        position: relative;
-        left: 17rem;
-        bottom: 10.2rem;
-        // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        @media screen and (width > 992px) {
+            margin-top: auto !important;
+            max-width: auto !important;
+            position: relative;
+            left: 17rem;
+            bottom: 10.2rem;
+            // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        @media screen and (width > 1024px) {
+            left: 13rem;
+        }
     }
+}
+
+/*** Section des compétences **/
+#sectionSkills {
+    /* Gestion de la complexité de la section au niveau responsive */
+    margin-top: 2rem;
+
+    @media screen and ( width > 524px) {
+                    margin-top: 4rem;
+    }
+    @media screen and ( 566px  < width< 992px) {
+            margin-top: 6rem;
+    }
+    
+    @media screen and (width > 610px) {
+    margin-top: 3rem;   
+ }
+     @media screen and (width > 614px) {
+    margin-top: 22rem;   
+ }
     @media screen and (width > 1024px) {
-        left: 13rem;
+     margin-top: 8rem;   
+ }
+
+ article {
+    padding: 1.5rem;
+    ul{
+        li {
+            background-color: white;
+            padding: 10px;
+            img {
+                margin-right: 1rem;
+            }
+
+            &:hover {
+               box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+        }
     }
 
+    /* Stylisation des icônes Bootstrap de la section Compétences */
+    .bi {
+        text-shadow: -1px 0px 1px currentColor;
+        font-size: larger;
     }
+ }
+
+    
 }

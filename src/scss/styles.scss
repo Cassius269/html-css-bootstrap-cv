@@ -1,5 +1,12 @@
+// Importation des variables 
+@use "./utils/variables" as *; // Rendre disponible les variables dans le contexte globale du fichier actuel
+
 /**** IMPORTATION DE BOOTSTRAP *****/
-@use "bootstrap/scss/bootstrap";
+// Injecter nos propres valeurs dans les variables Bootstrap avant qu'elles ne soient utilisées par Bootstrap
+@use "bootstrap/scss/bootstrap" with (
+  $primary: $primary, // Injection explicite
+  $secondary: $secondary
+);
 
 // Bases
 @use './base/base.scss' as base;
@@ -10,3 +17,4 @@
 
 // Importation des composants
 @use "./components/buttons.scss";
+
