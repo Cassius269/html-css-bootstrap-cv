@@ -121,12 +121,12 @@
                             <h5 class="card-title">Blog en Symfony</h5>
                             <p class="card-text">Application full-stack construite avec le framework Symfony</p>
                             <ul class="d-flex gap-1 flex-wrap">
-                                <li class="p-2 px-4 rounded-5 tag" id="tagSymfony">Symfony</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagMysql">MySQL</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagTwig">Twig</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagJavaScript">JavaScript</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagMercure">Mercure</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagAws">AWS S3</li>
+                                <li class="p-2 px-4 rounded-5 tag tagSymfony">Symfony</li>
+                                <li class="p-2 px-4 rounded-5 tag tagMysql">MySQL</li>
+                                <li class="p-2 px-4 rounded-5 tag tagTwig">Twig</li>
+                                <li class="p-2 px-4 rounded-5 tag tagJavaScript">JavaScript</li>
+                                <li class="p-2 px-4 rounded-5 tag tagMercure">Mercure</li>
+                                <li class="p-2 px-4 rounded-5 tag tagAws">AWS S3</li>
                             </ul>
                             <button class="btn text-primary btn">Voir le projet <i class="bi bi-arrow-right"></i></button>
                         </article>
@@ -140,9 +140,9 @@
                             <h5 class="card-title">API système de réservation de vol(s) d'avion</h5>
                             <p class="card-text">API Restfull construite avec le framework API Platform 4</p>
                             <ul class="d-flex gap-1 flex-wrap">
-                                <li class="p-2 px-4 rounded-5 tag" id="tagSymfony">Symfony</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagMysql">API Platform</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagJavaScript">Postman</li>
+                                <li class="p-2 px-4 rounded-5 tag tagSymfony">Symfony</li>
+                                <li class="p-2 px-4 rounded-5 tag tagMysql">API Platform</li>
+                                <li class="p-2 px-4 rounded-5 tag tagJavaScript">Postman</li>
                             </ul>
                             <button class="btn text-primary btn">Voir le projet <i class="bi bi-arrow-right"></i></button>
                         </article>
@@ -154,11 +154,12 @@
                         <img class="card-img-top" src="/assets/images/projects/blog-symfony.webp" alt="illustration du projet de blog codé en Symfony" loading="lazy" width="auto">
                         <article class="card-body">
                             <h5 class="card-title">CV en ligne</h5>
-                            <p class="card-text">Site statique monopage de CV en ligne fictif</p>
+                            <p class="card-text">Site statique monopage de CV en ligne</p>
                             <ul class="d-flex gap-1 flex-wrap">
-                                <li class="p-2 px-4 rounded-5 tag" id="tagSymfony">Bootstrap</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagMysql">Vite</li>
-                                <li class="p-2 px-4 rounded-5 tag" id="tagTwig">SCSS</li>
+                                <li class="p-2 px-4 rounded-5 tag tagSymfony">Bootstrap</li>
+                                <li class="p-2 px-4 rounded-5 tag tagMysql">Vite</li>
+                                <li class="p-2 px-4 rounded-5 tag tagTwig">SCSS</li>
+                                <li class="p-2 px-4 rounded-5 tag tagMercure">Yarn</li>
                             </ul>
                             <button class="btn text-primary btn">Voir le projet <i class="bi bi-arrow-right"></i></button>
                         </article>
@@ -167,8 +168,55 @@
             </div>
          </section>
 
-        <!-- Section Projets -->    
-         <section></section>
+        <!-- Section expérience professionnelle -->
+        <section class="container-fluid bg-body-tertiary py-5" id="sectionXpPro">
+            <div class="divDivider"></div>
+            <h2 class="text-center fw-bold text-uppercase pb-5">Expérience professionnelle</h2>
+
+            <ul class="timeline">
+                <!-- Expérience de Freelance -->
+                <li>
+                    <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="text-uppercase fw-bold">Escale Création/ MOHAMED ALI Fahami</h3>
+                                <h4 class="fw-bold text-primary">Développeur Web freelance</h4>
+                                <p class="text-muted"><i class="bi bi-clock-fill"></i> Depuis février 2024</p>
+                            </div>  
+                            <div class="timeline-body">
+                                <!-- <ul>
+                                    <li>Ajout de la possibilité d'écouter une traduction dans Google Translate</li>
+                                    <li class="mt-2">Développement de Google Suggest en mode Offline</li>
+                                    <li class="mt-2">Nouveau design du player de Youtube adapté au mobile</li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Expérience de chez Praxis Consulting Formation  -->
+                <li>
+                    <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="text-uppercase fw-bold">Praxis Consulting Formation</h3>
+                                <h4 class="fw-bold text-primary">Stage développeur Web </h4>
+                                <p class="text-muted"><i class="bi bi-clock-fill"></i> 06/2024 - 08/2024</p>
+                            </div>  
+                            <div class="timeline-body">
+                                <ul>
+                                    <li>Mise en place d’une fonctionnalité de réinitialisation de mot de passe</li>
+                                    <li class="mt-2">Blocage dynamique des comptes à risque</li>
+                                    <li class="mt-2">Système de notifications instantanées dans l’application</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer>
     </footer>

@@ -1,6 +1,7 @@
 @use '../layouts/header' as header;
 @use '../utils/variables' as variables;
 @use "bootstrap/scss/bootstrap" as *; // Importe toutes les variables de Bootstrap dans l'espace global
+@use "../components/timeline.scss";
 
 /** Stylisation de la section Présentation **/
 .presentation {
@@ -55,6 +56,13 @@
     article {
         padding: 1.5rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+        transition: scale 1s ease;
+        &:hover {
+            @include media-breakpoint-up(md){
+                background-color: variables.$tertiary;
+                scale: 1.1;
+            }
+        }
         ul{
             margin: 0;
             padding: 0;
@@ -94,46 +102,48 @@
 
     .project {        
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
-        #tagSymfony {
+        transition: scale 1s ease;
+        .tagSymfony {
             background-color: $blue-200;
             color: $blue-500;
             font-weight: bold;
         }
 
-        #tagMysql {
+        .tagMysql {
             background-color: $red-200;
             color: $red-500;
             font-weight: bold;
         }
 
-        #tagTwig {
+        .tagTwig {
             background-color: $yellow-200;
             color: $yellow-500;
             font-weight: bold;
         }
 
-        #tagJavaScript {
+        .tagJavaScript {
             background-color: $teal-200;
             color: $teal-500;
             font-weight: bold;
         }
 
-        #tagMercure {
+        .tagMercure {
             background-color: $teal-200;
             color: $teal-500;
             font-weight: bold;
         }
 
-        #tagAws {
+        .tagAws {
             background-color: $orange-200;
             color: $orange-500;
             font-weight: bold;
         }
 
         &:hover {
-            position: cursor;
-            // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset !important;
+            @include media-breakpoint-up(md){
+                background-color: variables.$tertiary;
+                scale: 1.1;
+            }
         }
     }
 }
