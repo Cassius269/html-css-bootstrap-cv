@@ -41,6 +41,9 @@
                     <a class="nav-link" href="#">Expérience</a>
                 </li>
                 <li>
+                    <a class="nav-link" href="#">Éducation</a>
+                </li>
+                <li>
                     <a class="nav-link" href="#">Réferences</a>
                 </li>
             </ul>
@@ -51,19 +54,18 @@
       </div>
     </nav>
   </header>
-    <main class="container-fluid">
+    <main class="">
         <!-- Section Présentation -->
         <section class="presentation p-3 bg-secondary">
             <article>
                 <h2>Développeur <span class="text-primary">PHP/Symfony</span></h2>
                 <p>Passionné par la création d'applications web robustes et scalables</p>
                 <div class="row">
-                     <div class="d-flex flex-column gap-3 d-lg-block col-lg-12">
+                     <div class="d-flex flex-column d-lg-block col-lg-12">
                         <a href="#" role="button" class="btn btn-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold"> Me recruter</a>
                         <a href="#" role="button" class="btn btn-outline-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold mx-lg-5">Voir les projets</a>
                     </div>
-                <!-- <img class="d-block m-auto mt-5 img-fluid col-lg-4 rounded-5" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/14755d0ad4-c95fa96790679bc4056f.png" alt="image représentant un developpeur entrain de coder"> -->
-                 <img class="d-block m-auto mt-5 img-fluid col-lg-4 rounded-5" src="./assets/images/illustration.png" alt="image représentant un developpeur avec son matériel de travail">
+                 <img class="d-block m-auto mt-5 img-fluid col-lg-4 rounded-5" src="./assets/images/projects/developper.webp" alt="image représentant un developpeur avec son matériel de travail" width="auto">
                 </div>  
             </article>
         </section>
@@ -71,8 +73,9 @@
         <!-- Section Compétences -->
         <section class="container" id="sectionSkills">
             <h2 class="text-uppercase text-center p-md-5">Compétences techniques</h2>
-            <div class="row gap-3 d-flex justify-content-between">
-               <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3">
+            <div class="row d-flex justify-content-between g-3">
+                <!---Unité de code de la partie Frontend-->
+               <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3 shadow-sm">
                     <h2><i class="bi bi-code-slash text-primary"></i> Frontend</h2>
                     <ul>
                         <!-- <li>React.js</li> -->
@@ -83,16 +86,20 @@
                         <li><img  class="mb-1" src="/assets/images/vite-icon.svg" alt="icône représentant le builder Webpack" width="20">Vite</li>    
                     </ul>
                 </article>
-               <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3">
+
+                <!---Unité de code de la partie Backend-->
+               <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3 shadow-sm">
                     <h2><i class="bi bi-database-fill text-primary"></i> Backend</h2>
                     <ul>
-                        <li><img src="/assets/images/symfony.svg" alt="icône représentant le framework Symfony" width="20">Symfony</li>
-                        <li><img src="/assets/images/php.svg" alt="icône représentant le langage PHP" width="20">PHP</li>
+                        <li><img src="/assets/images/symfony.svg" alt="icône représentant le framework Symfony" width="20">Symfony 7</li>
+                        <li><img src="/assets/images/php.svg" alt="icône représentant le langage PHP" width="20">PHP 8</li>
                         <li><img src="/assets/images/mysql.svg" alt="icône représentant le SGBD MySQL" width="20">MySQL</li>
                         <li><img src="/assets/images/api-restfull.svg" alt="icône représentant les API Restfull" width="20">RESTful APIs (API Platform 4)</li>
                     </ul>
                 </article>
-                <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3">
+
+                <!---Unité de code de la partie Outils et autres-->
+                <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3  shadow-sm">
                     <h2><i class="bi bi-tools text-primary"></i> Outils et autres</h2>
                     <ul>
                         <li><img src="/assets/images/git-github.svg" alt="icône représentant une branche de versionning de Git et GitHubs" width="20">Git & GitHub</li>
@@ -102,7 +109,68 @@
                </article>
             </div>
         </section>
+    
+        <!-- Section Projets -->
+         <section class="container p-5" id="sectionProjects">
+            <h2 class="text-uppercase text-center p-3">Projets</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 g-md-5">
+                <div class="col">
+                    <div class="card h-100 shadow-sm project">
+                        <img class="card-img-top" src="/assets/images/projects/blog-symfony.webp" alt="illustration du projet de blog codé en Symfony" loading="lazy" width="auto">
+                        <article class="card-body">
+                            <h5 class="card-title">Blog en Symfony</h5>
+                            <p class="card-text">Application full-stack construite avec le framework Symfony</p>
+                            <ul class="d-flex gap-1 flex-wrap">
+                                <li class="p-2 px-4 rounded-5 tag" id="tagSymfony">Symfony</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagMysql">MySQL</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagTwig">Twig</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagJavaScript">JavaScript</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagMercure">Mercure</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagAws">AWS S3</li>
+                            </ul>
+                            <button class="btn text-primary btn">Voir le projet <i class="bi bi-arrow-right"></i></button>
+                        </article>
+                    </div>  
+                </div>
+                <!-- bloc projet 2-->
+                <div class="col">
+                    <div class="card h-100 shadow-sm project">
+                        <img class="card-img-top" src="/assets/images/projects/blog-symfony.webp" alt="illustration du projet de blog codé en Symfony" loading="lazy" width="auto">
+                        <article class="card-body">
+                            <h5 class="card-title">API système de réservation de vol(s) d'avion</h5>
+                            <p class="card-text">API Restfull construite avec le framework API Platform 4</p>
+                            <ul class="d-flex gap-1 flex-wrap">
+                                <li class="p-2 px-4 rounded-5 tag" id="tagSymfony">Symfony</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagMysql">API Platform</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagJavaScript">Postman</li>
+                            </ul>
+                            <button class="btn text-primary btn">Voir le projet <i class="bi bi-arrow-right"></i></button>
+                        </article>
+                    </div>  
+                </div>
+                <!-- bloc projet 3-->
+                <div class="col">
+                    <div class="card h-100 shadow-sm project">
+                        <img class="card-img-top" src="/assets/images/projects/blog-symfony.webp" alt="illustration du projet de blog codé en Symfony" loading="lazy" width="auto">
+                        <article class="card-body">
+                            <h5 class="card-title">CV en ligne</h5>
+                            <p class="card-text">Site statique monopage de CV en ligne fictif</p>
+                            <ul class="d-flex gap-1 flex-wrap">
+                                <li class="p-2 px-4 rounded-5 tag" id="tagSymfony">Bootstrap</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagMysql">Vite</li>
+                                <li class="p-2 px-4 rounded-5 tag" id="tagTwig">SCSS</li>
+                            </ul>
+                            <button class="btn text-primary btn">Voir le projet <i class="bi bi-arrow-right"></i></button>
+                        </article>
+                    </div>  
+                </div>
+            </div>
+         </section>
+
+        <!-- Section Projets -->    
+         <section></section>
     </main>
-    <footer></footer>
+    <footer>
+    </footer>
 </body>
 </html>
