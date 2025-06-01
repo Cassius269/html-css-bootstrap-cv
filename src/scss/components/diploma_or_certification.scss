@@ -1,0 +1,18 @@
+// @use '../utils/variables' as *;
+@use "bootstrap/scss/bootstrap" as *; // Importe toutes les variables de Bootstrap dans l'espace global
+
+/**** SECTION éducation ***/
+#sectionEducation article {
+    background: $gray-100;
+    transition: transform 1s; /* éviter l'effet cassant de l'augmentation de la taille d'un parcours de formation au survol de la souris*/
+   
+    &:hover {
+    transform: scale(1.05);
+    }
+
+    .divDivider {
+        max-width: 200px;
+        border-top: 2px solid $indigo-500;
+        margin: 20px auto;
+    }
+}

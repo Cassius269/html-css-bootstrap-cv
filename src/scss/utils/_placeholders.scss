@@ -1,0 +1,16 @@
+@use '../utils/variables' as *; // importation des variables de couleur
+
+%banner {
+    // background-color: $tertiary;
+    padding: 1.5rem 0px 0.5rem 0px;
+
+    animation: displayBanner 15s ease-in infinite alternate-reverse ;
+    @keyframes displayBanner {
+        from {
+            transform: translateX(-45%);       
+         }
+        to {
+            transform: translateX(45%);        
+}
+    }
+}

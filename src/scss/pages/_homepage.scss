@@ -2,6 +2,8 @@
 @use '../utils/variables' as variables;
 @use "bootstrap/scss/bootstrap" as *; // Importe toutes les variables de Bootstrap dans l'espace global
 @use "../components/timeline.scss";
+@use '../components/diploma_or_certification.scss';
+@use '../utils/placeholders' as *;
 
 /** Stylisation de la section Présentation **/
 .presentation {
@@ -147,3 +149,11 @@
         }
     }
 }
+
+
+#sectionEducation {
+    .banner {
+        @extend %banner;
+    }
+}
+
