@@ -1,10 +1,10 @@
-@use '../layouts/header' as header;
+@use '../layouts/header';
+@use '../layouts/footer';
 @use '../utils/variables' as variables;
 @use "bootstrap/scss/bootstrap" as *; // Importe toutes les variables de Bootstrap dans l'espace global
 @use "../components/timeline.scss";
 @use '../components/diploma_or_certification.scss';
 @use '../utils/placeholders' as *;
-
 /** Stylisation de la section Présentation **/
 .presentation {
     max-height: 730px !important;
@@ -150,6 +150,21 @@
     }
 }
 
+#sectionCallToActions {
+        .icon {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        .svg-inline--fa {
+                width: 80%;
+
+        }
+    }
+}
 
 #sectionEducation {
     .banner {

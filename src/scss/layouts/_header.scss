@@ -1,20 +1,31 @@
 /** STYLISATION du header **/
 @use '../utils/variables' as variables;
+@use "bootstrap/scss/bootstrap" as * ;
 
 header {
     nav {
         .navbar-brand {
             margin-left: 1rem;
+            font-size: 1rem;
         }
 
         #divListLinks {
             justify-content: space-evenly;
 
-            .nav-link:hover {
+            .nav-link {
+                font-weight: bold;
+                &:hover {
                 background-color: variables.$primary;
                 color:white;
                 cursor: pointer;
+                }
             }
+            }
+        
+            @include media-breakpoint-up(lg) {
+                flex-wrap: wrap !important;
+            }
+           
         }
     }
 
@@ -28,5 +39,3 @@ header {
         }
     }
     
-}
-

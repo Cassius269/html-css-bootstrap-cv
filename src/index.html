@@ -47,7 +47,7 @@
                     <a class="nav-link" href="#sectionReferences">Réferences</a>
                 </li>
             </ul>
-            <button type="button" class="btn btn-primary px-lg-3 py-lg-2 bg-primary"> 
+            <button type="button" class="btn btn-primary px-lg-3 py-lg-2"> 
                 <a class="nav-link" href="#">Me contacter</a>
             </button>
       </div>
@@ -61,7 +61,7 @@
                 <h2>Développeur <span class="text-primary">PHP/Symfony</span></h2>
                 <p>Passionné par la création d'applications web robustes et scalables</p>
                 <div class="row">
-                     <div class="d-flex flex-column d-lg-block col-lg-12">
+                     <div class="d-flex flex-column d-lg-block col-lg-12 gap-3">
                         <a href="#" role="button" class="btn btn-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold"> Me recruter</a>
                         <a href="#sectionProjects" role="button" class="btn btn-outline-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold mx-lg-5">Voir les projets</a>
                     </div>
@@ -73,9 +73,9 @@
         <!-- Section Compétences -->
         <section class="container" id="sectionSkills">
             <h2 class="text-uppercase text-center p-md-5">Compétences techniques</h2>
-            <div class="row d-flex justify-content-between g-3">
+            <div class="row d-flex g-3 justify-content-around">
                 <!---Unité de code de la partie Frontend-->
-               <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3 shadow-sm">
+               <article class="bg-body-tertiary col-10 col-md-5 col-lg-3 rounded-3 shadow-sm">
                     <h2><i class="bi bi-code-slash text-primary"></i> Frontend</h2>
                     <ul>
                         <!-- <li>React.js</li> -->
@@ -88,7 +88,7 @@
                 </article>
 
                 <!---Unité de code de la partie Backend-->
-               <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3 shadow-sm">
+               <article class="bg-body-tertiary col-10 col-md-5 col-lg-3 rounded-3 shadow-sm">
                     <h2><i class="bi bi-database-fill text-primary"></i> Backend</h2>
                     <ul>
                         <li><img src="/assets/images/symfony.svg" alt="icône représentant le framework Symfony" width="20">Symfony 7</li>
@@ -99,7 +99,7 @@
                 </article>
 
                 <!---Unité de code de la partie Outils et autres-->
-                <article class="bg-body-tertiary col-md-5 col-lg-3 rounded-3  shadow-sm">
+                <article class="bg-body-tertiary col-10 col-md-5 col-lg-3 rounded-3  shadow-sm">
                     <h2><i class="bi bi-tools text-primary"></i> Outils et autres</h2>
                     <ul>
                         <li><img src="/assets/images/git-github.svg" alt="icône représentant une branche de versionning de Git et GitHubs" width="20">Git & GitHub</li>
@@ -167,7 +167,39 @@
                 </div>
             </div>
          </section>
-
+         <!-- Section Call to actions -->
+        <section class="container-fluid bg-dark bg-gradient bg-opacity-60 text-white p-5" id="sectionCallToActions">
+            <h3 class="text-center">Prêt à transformer vos idées ?</h3>
+            <p class="text-center">Collaborons et construisons ensemble quelque chose d'extraordinaire. Votre prochain projet révolutionnaire est à portée de main.</p>
+            
+            <!-- Liste des propositions de contact -->
+                <div class="row gap-3 d-flex justify-content-around" id="footerDivCardContacts">
+                    <article class="footerCardContact col-12 col-md-5 col-lg-3 border border-primary border-2 rounded-4 p-3 p-lg-5 p-e-0 d-flex flex-column align-items-center gap-2">
+                        <i class="icon bg-danger">
+                            <svg width="60" class="svg-inline--fa fa-briefcase " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="briefcase" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"></path></svg>
+                        </i>
+                        <h5>Commencer un projet</h5>
+                        <p>Vous avez une idée géniale ? Donnons-lui vie grâce à une technologie de pointe et sécurisée.</p>
+                        <button class="btn btn-danger rounded-5">Discutons</button>
+                    </article>
+                    <article class="footerCardContact col-12 col-md-5 col-lg-3 border border-primary border-2 rounded-4 p-3 p-lg-5 p-e-0 d-flex flex-column align-items-center gap-2">
+                        <i class="icon bg-warning">
+                            <svg width="40" class="svg-inline--fa fa-handshake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="handshake" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM16 128c-8.8 0-16 7.2-16 16V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128H16zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V144c0-8.8-7.2-16-16-16H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"></path></svg>                
+                        </i>
+                        <h5>Rejoindre mon équipe</h5>
+                        <p>Vous recherchez un développeur backend dédié ? Je suis prêt à relever de nouveaux défis (en contrat d'alternance).</p>
+                        <button class="btn btn-warning rounded-5">Me recruter</button>
+                    </article>            
+                    <article class="footerCardContact col-12 col-md-5 col-lg-3 border border-primary border-2 rounded-4 p-3 p-lg-5 p-e-0 d-flex flex-column align-items-center gap-2">
+                        <i class="icon bg-success">
+                            <svg width="40" class="svg-inline--fa fa-comments" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"></path></svg>
+                        </i>
+                        <h5>Obtenir des conseils</h5>
+                        <p>Besoin d'une consultation technique ou de maintenance ? Je suis là pour vous aider à réussir.</p>
+                        <button class="btn btn-success rounded-5">Me contacter</button>
+                    </article>
+            </div> 
+            </section>
         <!-- Section expérience professionnelle -->
         <section class="container-fluid bg-body-tertiary py-5" id="sectionXpPro">
             <div class="divDivider"></div>
@@ -182,7 +214,7 @@
                             <div class="timeline-heading">
                                 <h3 class="text-uppercase fw-bold">Escale Création/ MOHAMED ALI Fahami</h3>
                                 <h4 class="fw-bold text-primary">Développeur Web freelance</h4>
-                                <p class="text-muted"><i class="bi bi-clock-fill"></i> Depuis février 2024</p>
+                                <p class="text-muted"><i class="bi bi-clock-fill"></i> Depuis février 2025</p>
                             </div>  
                             <div class="timeline-body">
                                 <!-- <ul>
@@ -226,7 +258,7 @@
                 <h6 class="banner">A la recherche d'une entreprise pour contrat d'alternance développeur PHP/Symfony à partir d'octobre 2025</h6>   
             </article>
             <div class="row d-flex justify-content-around gap-3">
-                 <article class="col-md-4 py-4 rounded-3 shadow-sm">
+                 <article class="col-10 col-md-4 py-4 rounded-3 shadow-sm">
                     <p class="text-muted">2023 - 2024</p>
                     <img src="https://static-00.iconduck.com/assets.00/diploma-icon-512x480-jx6z6n5a.png" alt="icône représentant un diplôme" width="60">
                     <h2 class="text-primary fw-bold">CCI Formation - Lyon</h2>
@@ -237,7 +269,7 @@
                         <li>Développer la partie back-end d’une application web ou web mobile sécurisée </li>
                     </ul>
                 </article>
-                <article class="col-md-4 py-4 rounded-3 shadow-sm">
+                <article class="col-10 col-md-4 py-4 rounded-3 shadow-sm">
                     <p class="text-muted">2023</p>
                     <img src="https://static-00.iconduck.com/assets.00/diploma-icon-512x480-jx6z6n5a.png" alt="icône représentant un diplôme" width="60">
                     <h2 class="text-primary fw-bold">La Toile EmLyon</h2>
@@ -252,6 +284,7 @@
         </section>
     </main>
     <footer>
+
     </footer>
 </body>
 </html>
