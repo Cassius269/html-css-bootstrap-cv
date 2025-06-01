@@ -18,3 +18,17 @@
 %cardContact {
     background-color: grey;
 }
+
+%stylishIcon {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        .svg-inline--fa {
+                width: 80%;
+
+        }
+}

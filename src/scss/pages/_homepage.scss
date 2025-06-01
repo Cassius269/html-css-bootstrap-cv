@@ -151,18 +151,8 @@
 }
 
 #sectionCallToActions {
-        .icon {
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        .svg-inline--fa {
-                width: 80%;
-
-        }
+    .icon {
+            @extend %stylishIcon;
     }
 }
 

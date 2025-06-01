@@ -1,5 +1,9 @@
 @use '../utils/placeholders';
 
 footer {
+    background-color: grey;
 
+    .icon {
+        @extend %stylishIcon;
+    }
 }
