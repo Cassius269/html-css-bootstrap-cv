@@ -9,7 +9,7 @@ if (exampleModal) {
   exampleModal.addEventListener('show.bs.modal', event => {
     // Button that triggered the modal
     const button = event.relatedTarget;
-    console.log(event.relatedTarget);
+    // console.log(event.relatedTarget);
     // Extract info from data-bs-* attributes
     const motivation = button.getAttribute('data-bs-whatever');
     
@@ -27,7 +27,23 @@ if (exampleModal) {
             console.log('cas imprévu');     
     }
   }
-)
 
-// const form = document.querySelector('')
+
+
+)
+//   form = document.querySelector('form[name="contact"]');
+  
+//  form.addEventListener('submit', function(e) {
+//   e.preventDefault();
+  
+//   const formData = new FormData(e.target);
+  
+//   fetch('/', {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+//     body: new URLSearchParams(formData).toString()
+//   })
+//   .then(() => alert('Message envoyé avec succès!'))
+//   .catch(error => console.error('Erreur:', error));
+// });
 }
