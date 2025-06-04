@@ -6,6 +6,8 @@
     <meta name="description" content="CV de MOHAMED ALI Fahami">
     <!-- Intégration de Bootstrap au projet -->
     <script src="js/main.js" type="module"></script>
+    <!-- Intégration du script personnalisé de gestion des formulaires -->
+    <script src="js/features/script.js" defer></script>
     <!-- Intégration des icônes Bootstrap au projet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">   
     <!-- Intégration font Google --> 
@@ -48,7 +50,7 @@
                 </li> -->
             </ul>
             <button type="button" class="btn btn-primary px-lg-3 py-lg-2"> 
-                <a class="nav-link" href="#">Me contacter</a>
+                <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#modalFormContact" data-bs-whatever="consulting">Me contacter</a>
             </button>
       </div>
       </div>
@@ -62,7 +64,7 @@
                 <p>Passionné par la création d'applications web robustes et scalables</p>
                 <div class="row">
                      <div class="d-flex flex-column d-lg-block col-lg-12 gap-3">
-                        <a href="#" role="button" class="btn btn-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold"> Me recruter</a>
+                        <a href="#" role="button" class="btn btn-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold" data-bs-toggle="modal" data-bs-target="#modalFormContact" data-bs-whatever="hiring"> Me recruter</a>
                         <a href="#sectionProjects" role="button" class="btn btn-outline-primary rounded-2 py-2 py-lg-3 px-lg-4 fw-bold mx-lg-5">Voir les projets</a>
                     </div>
                  <img class="d-block m-auto mt-5 img-fluid col-lg-4 rounded-5" src="https://cv-images.netlify.app/developper.webp" alt="image représentant un developpeur avec son matériel de travail" width="auto">
@@ -180,7 +182,7 @@
                         </i>
                         <h5>Commencer un projet</h5>
                         <p>Vous avez une idée géniale ? Donnons-lui vie grâce à une technologie de pointe et sécurisée.</p>
-                        <button class="btn btn-danger rounded-5">Discutons</button>
+                        <button class="btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#modalFormContact" data-bs-whatever="freelance">Discutons</button>
                     </article>
                     <article class="footerCardContact col-12 col-md-5 col-lg-3 border border-primary border-2 rounded-4 p-3 p-lg-5 p-e-0 d-flex flex-column align-items-center gap-2">
                         <i class="icon bg-warning">
@@ -188,7 +190,7 @@
                         </i>
                         <h5>Rejoindre mon équipe</h5>
                         <p>Vous recherchez un développeur backend dédié ? Je suis prêt à relever de nouveaux défis (en contrat d'alternance).</p>
-                        <button class="btn btn-warning rounded-5">Me recruter</button>
+                        <button class="btn btn-warning rounded-5" data-bs-toggle="modal" data-bs-target="#modalFormContact" data-bs-whatever="hiring">Me recruter</button>
                     </article>            
                     <article class="footerCardContact col-12 col-md-5 col-lg-3 border border-primary border-2 rounded-4 p-3 p-lg-5 p-e-0 d-flex flex-column align-items-center gap-2">
                         <i class="icon bg-success">
@@ -196,7 +198,7 @@
                         </i>
                         <h5>Obtenir des conseils</h5>
                         <p>Besoin d'une consultation technique ou de maintenance ? Je suis là pour vous aider à réussir.</p>
-                        <button class="btn btn-success rounded-5">Me contacter</button>
+                        <button class="btn btn-success rounded-5" data-bs-toggle="modal" data-bs-target="#modalFormContact" data-bs-whatever="consulting">Me contacter</button>
                     </article>
             </div> 
             </section>
@@ -280,6 +282,50 @@
                         <li>Maquetter une application web avec Figma</li>
                     </ul>
                 </article>
+            </div>
+        </section>
+        <!--Section réservé au modal de formulaire-->
+        <section>
+            <div class="modal fade" id="modalFormContact" tabindex="-1" aria-labelledby="modalFormContactLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalFormContactLabel">Nouveau Message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form name="contact" method="POST" data-netlify="true">
+                    <div class="mb-3">
+                        <label for="firstname">Prénom:</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                    <div class="mb-3" class="col-form-label">
+                        <label for="lastname" class="col-form-label">Nom de famille:</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <select name="motivation" id="motivation-message">
+                            <option value="hiring">recrutement</option>
+                            <option value="freelance">mission indépendante</option>
+                            <option value="consulting">besoin de consulting</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary">Envoyer</button>
+                </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
