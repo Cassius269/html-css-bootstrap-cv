@@ -297,18 +297,18 @@
                     <form name="contact" method="POST" data-netlify="true">
                     <div class="mb-3">
                         <label for="firstname">Prénom:</label>
-                        <input type="text" id="firstname" name="firstname">
+                        <input type="text" class="form-control" id="firstname" name="firstname">
                     </div>
                     <div class="mb-3" class="col-form-label">
                         <label for="lastname" class="col-form-label">Nom de famille:</label>
-                        <input type="text" id="lastname" name="lastname">
+                        <input type="text" class="form-control" id="lastname" name="lastname">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="col-form-label">Email:</label>
                         <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="mb-3">
-                        <select name="motivation" id="motivation-message">
+                        <select name="motivation" class="form-select" id="motivation-message">
                             <option value="hiring">recrutement</option>
                             <option value="freelance">mission indépendante</option>
                             <option value="consulting">besoin de consulting</option>
@@ -318,8 +318,10 @@
                         <label for="message-text" class="col-form-label">Message:</label>
                         <textarea class="form-control" id="message-text" name="message"></textarea>
                     </div>
-                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Annuler</button>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Annuler</button>
+                        <button type="submit" class="btn btn-primary ms-4">Envoyer</button>
+                    </div>
                     </form>
                 </div>
                 </div>
