@@ -5,6 +5,7 @@
 @use "../components/timeline.scss";
 @use '../components/diploma_or_certification.scss';
 @use '../utils/placeholders' as *;
+@use '../components/form.scss' as *;
 /** Stylisation de la section Présentation **/
 .presentation {
     max-height: 730px !important;

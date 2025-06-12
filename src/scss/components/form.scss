@@ -1,0 +1,9 @@
+
+@use "bootstrap/scss/bootstrap" as *; // Importe toutes les variables de Bootstrap dans l'espace global
+
+form .btn-primary {
+    border-radius: 11px !important;
+   @include media-breakpoint-up(xs) {
+    width: auto !important;
+   }
+}
