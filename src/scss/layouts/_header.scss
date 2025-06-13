@@ -6,7 +6,10 @@ header {
     nav {
         .navbar-brand {
             margin-left: 1rem;
-            font-size: 1rem;
+            font-size: small;
+            @include media-breakpoint-up(sm){ // à partir du mode portait d'un téléphone
+                font-size: 1rem;
+            }
         }
 
         #divListLinks {
