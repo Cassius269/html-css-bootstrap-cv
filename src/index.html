@@ -291,43 +291,43 @@
         <!--Section réservé au modal de formulaire-->
         <section>
             <div class="modal fade" id="modalFormContact" tabindex="-1" aria-labelledby="modalFormContactLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalFormContactLabel">Nouveau Message</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form name="contact" method="POST" data-netlify="true">
-                    <div class="mb-3">
-                        <label for="firstname">Prénom:</label>
-                        <input type="text" class="form-control" id="firstname" name="firstname">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalFormContactLabel">Nouveau Message</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="mb-3" class="col-form-label">
-                        <label for="lastname" class="col-form-label">Nom de famille:</label>
-                        <input type="text" class="form-control" id="lastname" name="lastname">
+                    <div class="modal-body">
+                        <form name="contact" method="POST" data-netlify="true">
+                        <div class="mb-3">
+                            <label for="firstname">Prénom:</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" minlength="3" required aria-required="true">
+                        </div>
+                        <div class="mb-3" class="col-form-label">
+                            <label for="lastname" class="col-form-label">Nom de famille:</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" minlength="3" required aria-required="true">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="mb-3">
+                            <select name="motivation" class="form-select" id="motivation-message" required aria-required="true">
+                                <option value="hiring">recrutement</option>
+                                <option value="freelance">mission freelance</option>
+                                <option value="consulting">besoin de consulting</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" name="message" required aria-required="true"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Annuler</button>
+                            <button type="submit" class="btn btn-primary ms-4">Envoyer</button>
+                        </div>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="col-form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="mb-3">
-                        <select name="motivation" class="form-select" id="motivation-message">
-                            <option value="hiring">recrutement</option>
-                            <option value="freelance">mission freelance</option>
-                            <option value="consulting">besoin de consulting</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text" name="message"></textarea>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Annuler</button>
-                        <button type="submit" class="btn btn-primary ms-4">Envoyer</button>
-                    </div>
-                    </form>
-                </div>
                 </div>
             </div>
             </div>
