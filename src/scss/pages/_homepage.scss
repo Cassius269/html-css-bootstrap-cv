@@ -42,7 +42,7 @@
     }
 
     @media screen and (width > 1024px) {
-     margin-top: 8rem;   
+     margin-top: 1rem;   
  }
 
     @media screen and (width > 2052px) {
@@ -150,9 +150,8 @@
     }
 }
 
-#sectionEducation {
-    .banner {
+#sectionBanner {
+        .banner {
         @extend %banner;
     }
 }
-

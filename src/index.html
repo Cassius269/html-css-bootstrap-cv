@@ -75,16 +75,21 @@
                 </div>  
             </article>
         </section>
-
+        <section class="mt-4" id="sectionBanner">
+            <!-- Bannière pour montrer qu'une formation est en cours -->
+            <article class="bg-primary overflow-hidden d-none d-md-block">
+                <h6 class="banner">À la recherche d’un CDI comme développeur PHP/Symfony dès maintenant, ou d’une alternance à partir de septembre 2026.</h6>   
+            </article>
+        </section>
         <!-- Section Compétences -->
         <section class="container" id="sectionSkills">
-            <h2 class="text-uppercase text-center p-md-5 p-2">Compétences techniques</h2>
+            <h2 class="text-uppercase text-center p-md-5">Compétences techniques</h2>
             <div class="row d-flex g-3 justify-content-around">
                 <!---Unité de code de la partie Frontend-->
                <article class="bg-body-tertiary col-10 col-md-5 col-lg-3 rounded-3 shadow-sm">
                     <h2><i class="bi bi-code-slash text-primary"></i> Frontend</h2>
                     <ul>
-                        <!-- <li>React.js</li> -->
+                        <li><img src="/assets/images/react-js.svg" alt="icône représentant le logo de React Js" width="20">React</li>
                         <li><img src="/assets/images/html.svg" alt="icône représentant le langage HTML" width="20">HTML5/CSS3</li>
                         <li><img src="/assets/images/javascript.svg" alt="icône représentant le langage JavaScript" width="20">JavaScript</li>
                         <li><img src="/assets/images/bootstrap.svg" alt="icône représentant le framework Bootstrap" width="20">Bootstrap 5</li>
@@ -97,8 +102,9 @@
                <article class="bg-body-tertiary col-10 col-md-5 col-lg-3 rounded-3 shadow-sm">
                     <h2><i class="bi bi-database-fill text-primary"></i> Backend</h2>
                     <ul>
-                        <li><img src="/assets/images/symfony.svg" alt="icône représentant le framework Symfony" width="20">Symfony 7</li>
+                        <li><img src="/assets/images/symfony.svg" alt="icône représentant le framework Symfony" width="20">Symfony (7 et 8)</li>
                         <li><img src="/assets/images/php.svg" alt="icône représentant le langage PHP" width="20">PHP 8</li>
+                        <li><img src="/assets/images/symfony.svg" alt="icône représentant le langage Java" width="20">Java 21</li>
                         <li><img src="/assets/images/mysql.svg" alt="icône représentant le SGBD MySQL" width="20">MySQL</li>
                         <li><img src="/assets/images/api-restfull.svg" alt="icône représentant les API Restfull" width="20">RESTful APIs (API Platform 4)</li>
                     </ul>
@@ -207,11 +213,29 @@
             </div> 
             </section>
         <!-- Section expérience professionnelle -->
-        <section class="container-fluid bg-body-tertiary py-5" id="sectionXpPro">
-            <div class="divDivider"></div>
+        <section class="container-fluid bg-body-tertiary mt-3 py-5" id="sectionXpPro">
+            <!-- <div class="divDivider"></div> -->
             <h2 class="text-center fw-bold text-uppercase pb-5">Expérience professionnelle</h2>
 
             <ul class="timeline">
+                <!-- Expérience de chez Praxis Escale Création  -->
+                <li>
+                    <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="text-uppercase fw-bold">Escale Création</h3>
+                                <h4 class="fw-bold text-primary">Stage développeur Web </h4>
+                                <p class="text-muted"><i class="bi bi-clock-fill"></i> 01/2026 - 06/2026</p>
+                            </div>  
+                            <div class="timeline-body">
+                                <ul>
+                                    <li>Création d'une application d'e-santé</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <!-- Expérience de Freelance -->
                 <li>
                     <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
@@ -259,14 +283,12 @@
  <!-- Section présentant le parcours éducatif -->
         <section class="container-fluid text-center py-5" id="sectionEducation">
             <h2 class="text-uppercase text-center p-md-5">éducation</h2>
-            <!-- Bannière pour montrer qu'une formation est en cours -->
-            <article class="bg-primary overflow-hidden mb-5 d-none d-md-block">
-                <h6 class="banner">A la recherche d'une entreprise pour contrat d'alternance développeur PHP/Symfony à partir d'octobre 2025</h6>   
-            </article>
             <div class="row d-flex justify-content-around gap-3 mt-5">
                  <article class="col-10 col-md-4 py-4 rounded-3 shadow-sm">
-                    <p class="text-muted">2023 - 2024</p>
-                    <img src="https://static-00.iconduck.com/assets.00/diploma-icon-512x480-jx6z6n5a.png" alt="icône représentant un diplôme" width="60">
+                    <div class="position-relative">
+                        <p class="text-muted">2023 - 2024</p>
+                        <img class="position-absolute top-0 end-0" src="/assets/images/certificate.png" alt="icône représentant un diplôme" width="40">
+                    </div>
                     <h2 class="text-primary fw-bold">CCI Formation - Lyon</h2>
                     <p>Titre professionnel Développeur web et web mobile</p>
                     <div class="divDivider"></div>
@@ -276,8 +298,10 @@
                     </ul>
                 </article>
                 <article class="col-10 col-md-4 py-4 rounded-3 shadow-sm">
-                    <p class="text-muted">2023</p>
-                    <img src="https://static-00.iconduck.com/assets.00/diploma-icon-512x480-jx6z6n5a.png" alt="icône représentant un diplôme" width="60">
+                    <div class="position-relative">
+                        <p class="text-muted">2023</p>
+                        <img class="position-absolute top-0 end-0" src="/assets/images/certificate.png" alt="icône représentant un diplôme" width="40">
+                    </div>
                     <h2 class="text-primary fw-bold">La Toile EmLyon</h2>
                     <p>Initiation au développement web</p>
                     <div class="divDivider"></div>
