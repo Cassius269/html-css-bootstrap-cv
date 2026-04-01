@@ -11,6 +11,11 @@
     @media screen and (width > 992px) {
         height: 500px;
     }
+
+    @media screen and (width > 1024px) {
+        height: 500px;
+        margin-bottom: 6rem;
+    }
     /* Cibler les liens boutons sous forme de lien direct */
         a[role="button"] {
             border-radius: 50px !important;
@@ -151,7 +156,8 @@
 }
 
 #sectionBanner {
-        .banner {
+    background-color: red;
+    .banner {
         @extend %banner;
     }
 }
